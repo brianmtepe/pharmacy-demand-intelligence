@@ -5,7 +5,6 @@ USE pharmacy_demand_intelligence;
 -- =====================================================================
 -- Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
 -- 01_create_tables_mysql.sql
--- MySQL 8.x compatible version (converted from SQL Server DDL)
 -- =====================================================================
 
 DROP DATABASE IF EXISTS pharmacy_demand_intelligence;
@@ -30,16 +29,16 @@ CREATE TABLE Suppliers (
 CREATE TABLE Product_Master (
     Product_ID          INT NOT NULL AUTO_INCREMENT,
     Product_Name        VARCHAR(100) NOT NULL,
-    Category             VARCHAR(50) NOT NULL,
-    Subcategory          VARCHAR(50) NULL,
-    Dosage_Form           VARCHAR(30) NULL,
-    Strength              VARCHAR(30) NULL,
-    Pack_Size              VARCHAR(30) NULL,
-    Supplier_ID             INT NULL,
-    Unit_Cost                DECIMAL(10,2) NOT NULL,
-    Selling_Price             DECIMAL(10,2) NOT NULL,
-    Routinely_Stocked          BIT NOT NULL DEFAULT 1,
-    Active                      BIT NOT NULL DEFAULT 1,
+    Category            VARCHAR(50) NOT NULL,
+    Subcategory         VARCHAR(50) NULL,
+    Dosage_Form         VARCHAR(30) NULL,
+    Strength            VARCHAR(30) NULL,
+    Pack_Size           VARCHAR(30) NULL,
+    Supplier_ID         INT NULL,
+    Unit_Cost           DECIMAL(10,2) NOT NULL,
+    Selling_Price       DECIMAL(10,2) NOT NULL,
+    Routinely_Stocked   BIT NOT NULL DEFAULT 1,
+    Active              BIT NOT NULL DEFAULT 1,
     PRIMARY KEY (Product_ID),
     CONSTRAINT FK_Product_Supplier
         FOREIGN KEY (Supplier_ID) REFERENCES Suppliers(Supplier_ID),
@@ -52,13 +51,13 @@ CREATE TABLE Product_Master (
 -- ---------------------------------------------------------------------
 CREATE TABLE Sales (
     Sale_ID              INT NOT NULL AUTO_INCREMENT,
-    Sale_Date             DATE NOT NULL,
-    Product_ID             INT NOT NULL,
-    Quantity                 INT NOT NULL,
-    Unit_Selling_Price        DECIMAL(10,2) NOT NULL,
-    Revenue                     DECIMAL(10,2) NOT NULL,
-    Unit_Cost                    DECIMAL(10,2) NULL,
-    Margin                         DECIMAL(10,2) NULL,
+    Sale_Date            DATE NOT NULL,
+    Product_ID           INT NOT NULL,
+    Quantity             INT NOT NULL,
+    Unit_Selling_Price   DECIMAL(10,2) NOT NULL,
+    Revenue              DECIMAL(10,2) NOT NULL,
+    Unit_Cost            DECIMAL(10,2) NULL,
+    Margin               DECIMAL(10,2) NULL,
     PRIMARY KEY (Sale_ID),
     CONSTRAINT FK_Sales_Product
         FOREIGN KEY (Product_ID) REFERENCES Product_Master(Product_ID),

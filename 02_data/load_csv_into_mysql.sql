@@ -1,15 +1,5 @@
 -- =====================================================================
 -- Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
--- 04_load_csv_into_mysql.sql  (FULL REPLACEMENT — BIT -> TINYINT fix applied)
---
--- BEFORE RUNNING:
--- 1. Confirm LOCAL INFILE is enabled:
---      SHOW GLOBAL VARIABLES LIKE 'local_infile';   -- must show ON
---      If OFF: SET GLOBAL local_infile = 1;
--- 2. Confirm this connection's Advanced tab has: OPT_LOCAL_INFILE=1
---    in the "Others" box, and that you're on a FRESH connection
---    (closed and reopened) since making that change.
--- 3. Update the file paths below to your actual clean/ folder location.
 -- =====================================================================
 USE pharmacy_demand_intelligence;
 SET FOREIGN_KEY_CHECKS = 0;

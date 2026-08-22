@@ -1,5 +1,7 @@
 # Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
 
+📄 **[Read the full project plan →](01_project_plan.md)**
+
 Exploring sales, product availability, ordering patterns and customer 
 demand using synthetic operational data.
 

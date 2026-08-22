@@ -1,8 +1,6 @@
 -- =====================================================================
 -- Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
--- 05_sql/03_analytical_views_mysql.sql
--- MySQL 8.x compatible (converted from SQL Server versions in the plan)
--- Run AFTER 01_create_tables_mysql.sql and after data has been loaded.
+-- 03_sql/03_analytical_views_mysql.sql
 -- =====================================================================
 USE pharmacy_demand_intelligence;
 
@@ -76,9 +74,7 @@ JOIN Suppliers s ON o.Supplier_ID = s.Supplier_ID
 GROUP BY s.Supplier_Name;
 
 -- G. ASSORTMENT -----------------------------------------------------------
--- MySQL does not support correlated subqueries referencing an outer alias
--- inside GROUP BY as cleanly as SQL Server in all versions, so this is
--- restructured using derived tables (still MySQL 8-compatible).
+
 DROP VIEW IF EXISTS vw_assortment_review;
 CREATE VIEW vw_assortment_review AS
 WITH sales_by_product AS (

@@ -107,4 +107,4 @@ LEFT JOIN sales_by_product sbp ON p.Product_ID = sbp.Product_ID
 LEFT JOIN requests_by_product rbp ON p.Product_ID = rbp.Product_ID;
 
 -- Quick smoke test after creation:
--- SELECT * FROM vw_assortment_review WHERE Review_Flag IS NOT NULL ORDER BY Request_Count DESC;
+SELECT * FROM vw_assortment_review WHERE Review_Flag IS NOT NULL ORDER BY Request_Count DESC;

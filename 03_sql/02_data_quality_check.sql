@@ -1,6 +1,6 @@
 -- =====================================================================
 -- Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
--- 05_sql/02_data_quality_checks_mysql.sql
+-- 03_sql/02_data_quality_checks_mysql.sql
 -- =====================================================================
 USE pharmacy_demand_intelligence;
 

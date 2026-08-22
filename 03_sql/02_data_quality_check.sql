@@ -1,7 +1,6 @@
 -- =====================================================================
 -- Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
 -- 05_sql/02_data_quality_checks_mysql.sql
--- Run after loading data. Every query should return 0 rows except where noted.
 -- =====================================================================
 USE pharmacy_demand_intelligence;
 
@@ -20,9 +19,7 @@ SELECT * FROM Orders WHERE Quantity_Ordered <= 0;
 
 -- Impossible stock balances
 -- NOTE: rows where Closing_Stock = 0 due to a write-off adjustment exceeding
--- available stock are EXPECTED (floor-at-zero business rule) and will show
--- here as a mismatch — review individually rather than treating all flagged
--- rows as errors.
+
 SELECT * FROM Stock_Daily
 WHERE Closing_Stock <> (Opening_Stock + Received - Sold + Adjustments)
    OR Opening_Stock < 0 OR Closing_Stock < 0;

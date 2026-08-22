@@ -1,7 +1,3 @@
-DROP DATABASE IF EXISTS pharmacy_demand_intelligence;
-CREATE DATABASE pharmacy_demand_intelligence;
-USE pharmacy_demand_intelligence;
-
 -- =====================================================================
 -- Pharmacy Operations & Demand Intelligence — Synthetic Demonstration
 -- 01_create_tables_mysql.sql
@@ -70,13 +66,13 @@ CREATE TABLE Sales (
 -- ---------------------------------------------------------------------
 CREATE TABLE Stock_Daily (
     Stock_ID        INT NOT NULL AUTO_INCREMENT,
-    `Date`           DATE NOT NULL,
-    Product_ID        INT NOT NULL,
-    Opening_Stock       INT NOT NULL,
-    Received              INT NOT NULL DEFAULT 0,
-    Sold                    INT NOT NULL DEFAULT 0,
-    Adjustments               INT NOT NULL DEFAULT 0,
-    Closing_Stock               INT NOT NULL,
+    `Date`          DATE NOT NULL,
+    Product_ID      INT NOT NULL,
+    Opening_Stock   INT NOT NULL,
+    Received        INT NOT NULL DEFAULT 0,
+    Sold            INT NOT NULL DEFAULT 0,
+    Adjustments     INT NOT NULL DEFAULT 0,
+    Closing_Stock   INT NOT NULL,
     PRIMARY KEY (Stock_ID),
     CONSTRAINT UQ_Stock_ProductDate UNIQUE (Product_ID, `Date`),
     CONSTRAINT FK_Stock_Product
@@ -90,14 +86,14 @@ CREATE TABLE Stock_Daily (
 -- ---------------------------------------------------------------------
 CREATE TABLE Orders (
     Order_ID            INT NOT NULL AUTO_INCREMENT,
-    Order_Date            DATE NOT NULL,
-    Product_ID              INT NOT NULL,
-    Quantity_Ordered          INT NOT NULL,
-    Supplier_ID                 INT NOT NULL,
-    Reason                        VARCHAR(30) NOT NULL,
-    Expected_Date                  DATE NULL,
-    Received_Date                    DATE NULL,
-    Quantity_Received                  INT NULL,
+    Order_Date          DATE NOT NULL,
+    Product_ID          INT NOT NULL,
+    Quantity_Ordered    INT NOT NULL,
+    Supplier_ID         INT NOT NULL,
+    Reason              VARCHAR(30) NOT NULL,
+    Expected_Date       DATE NULL,
+    Received_Date       DATE NULL,
+    Quantity_Received   INT NULL,
     PRIMARY KEY (Order_ID),
     CONSTRAINT FK_Orders_Product
         FOREIGN KEY (Product_ID) REFERENCES Product_Master(Product_ID),
@@ -114,17 +110,17 @@ CREATE TABLE Orders (
 -- ---------------------------------------------------------------------
 CREATE TABLE Customer_Requests (
     Request_ID              INT NOT NULL AUTO_INCREMENT,
-    Request_Date              DATE NOT NULL,
-    Requested_Product_ID        INT NULL,
-    Requested_Category            VARCHAR(50) NULL,
-    Quantity_Requested               INT NULL,
-    Available                          BIT NOT NULL,
-    Alternative_Offered                  BIT NOT NULL DEFAULT 0,
-    Alternative_Product_ID                 INT NULL,
-    Ordered_For_Customer                     BIT NOT NULL DEFAULT 0,
-    Order_ID                                   INT NULL,
-    Fulfilled_Date                               DATE NULL,
-    Outcome                                        VARCHAR(30) NOT NULL,
+    Request_Date            DATE NOT NULL,
+    Requested_Product_ID    INT NULL,
+    Requested_Category      VARCHAR(50) NULL,
+    Quantity_Requested      INT NULL,
+    Available               BIT NOT NULL,
+    Alternative_Offered     BIT NOT NULL DEFAULT 0,
+    Alternative_Product_ID  INT NULL,
+    Ordered_For_Customer    BIT NOT NULL DEFAULT 0,
+    Order_ID                INT NULL,
+    Fulfilled_Date          DATE NULL,
+    Outcome                 VARCHAR(30) NOT NULL,
     PRIMARY KEY (Request_ID),
     CONSTRAINT FK_Request_Product
         FOREIGN KEY (Requested_Product_ID) REFERENCES Product_Master(Product_ID),

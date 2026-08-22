@@ -1,0 +1,71 @@
+Product_ID,Product_Name,Category,Subcategory,Dosage_Form,Strength,Pack_Size,Supplier_ID,Unit_Cost,Selling_Price,Routinely_Stocked,Active
+101,Antimalarial - Option A,Antimalarial,,Capsule,,30 units,1,118.14,193.32,1,1
+102,Antimalarial - Option B,Antimalarial,,Capsule,,20 units,3,45.11,65.53,0,1
+103,Antimalarial - Option C,Antimalarial,,Syrup,,10 units,5,68.4,102.57,0,1
+104,Analgesic - Option A,Analgesic,Analgesic type A,Tablet,250mg,50 units,4,243.11,401.59,1,1
+105,Analgesic - Option B,Analgesic,Analgesic type B,Capsule,250mg,24 units,4,242.36,338.49,1,1
+106,Analgesic - Option C,Analgesic,,Tablet,,50 units,1,172.41,249.43,1,1
+107,Analgesic - Option D,Analgesic,,Tablet,,10 units,4,82.76,128.87,1,0
+108,Analgesic - Option E,Analgesic,,Capsule,125mg,50 units,3,198.47,289.07,1,1
+109,Analgesic - Option F,Analgesic,Analgesic type F,Capsule,500mg,12 units,3,164.16,246.09,1,1
+110,Analgesic - Option G,Analgesic,,Tablet,20mg,24 units,5,215.55,292.13,1,1
+111,Analgesic - Option H,Analgesic,Analgesic type H,Cream,,30 units,4,110.5,178.6,1,0
+112,Antibiotic - Option A,Antibiotic,Antibiotic type A,Tablet,250mg,30 units,3,132.75,175.04,1,1
+113,Antibiotic - Option B,Antibiotic,Antibiotic type B,Tablet,,100 units,2,35.6,46.39,0,1
+114,Antibiotic - Option C,Antibiotic,,Capsule,40mg,50 units,4,183.47,266.44,1,1
+115,Antibiotic - Option D,Antibiotic,,Cream,,10 units,2,56.54,92.47,0,1
+116,Antibiotic - Option E,Antibiotic,Antibiotic type E,Cream,250mg,10 units,3,34.84,50.07,1,1
+117,Antibiotic - Option F,Antibiotic,Antibiotic type F,Cream,,30 units,5,55.09,91.8,1,1
+118,Antibiotic - Option G,Antibiotic,,Syrup,100mg,50 units,2,198.94,256.08,1,1
+119,Antibiotic - Option H,Antibiotic,,Tablet,40mg,24 units,2,137.36,198.83,1,1
+120,Antibiotic - Option I,Antibiotic,Antibiotic type I,Tablet,,30 units,2,172.98,238.12,0,1
+121,Antihistamine - Option A,Antihistamine,Antihistamine type A,Tablet,,20 units,3,23.79,35.68,0,1
+122,Antihistamine - Option B,Antihistamine,,Tablet,,100 units,5,136.04,185.72,1,1
+123,Antihistamine - Option C,Antihistamine,,Suspension,,100 units,2,190.92,315.18,1,1
+124,Antihistamine - Option D,Antihistamine,Antihistamine type D,Tablet,,12 units,2,37.2,59.0,0,1
+125,Antihistamine - Option E,Antihistamine,,Tablet,,100 units,4,57.13,86.82,1,1
+126,Antihistamine - Option F,Antihistamine,Antihistamine type F,Syrup,40mg,100 units,1,48.82,61.33,1,1
+127,Cough & Cold - Option A,Cough & Cold,Cough & Cold type A,Cream,125mg,100 units,4,61.95,99.85,1,1
+128,Cough & Cold - Option B,Cough & Cold,,Tablet,125mg,30 units,3,85.72,126.0,0,1
+129,Cough & Cold - Option C,Cough & Cold,,Cream,,50 units,3,39.89,52.38,1,1
+130,Cough & Cold - Option D,Cough & Cold,,Syrup,100mg,24 units,5,199.42,250.88,1,1
+131,Cough & Cold - Option E,Cough & Cold,,Cream,,20 units,2,218.92,333.06,1,1
+132,Cough & Cold - Option F,Cough & Cold,Cough & Cold type F,Syrup,250mg,20 units,5,73.24,99.35,0,1
+133,Cough & Cold - Option G,Cough & Cold,Cough & Cold type G,Injection,100mg,10 units,1,87.93,115.61,0,1
+134,Cough & Cold - Option H,Cough & Cold,Cough & Cold type H,Tablet,20mg,100 units,5,28.02,37.23,1,1
+135,Gastro/Antacid - Option A,Gastro/Antacid,Gastro/Antacid type A,Suspension,500mg,20 units,3,215.02,272.98,1,1
+136,Gastro/Antacid - Option B,Gastro/Antacid,,Tablet,20mg,50 units,5,102.8,152.73,0,1
+137,Gastro/Antacid - Option C,Gastro/Antacid,,Suspension,250mg,24 units,5,245.2,395.0,0,1
+138,Gastro/Antacid - Option D,Gastro/Antacid,Gastro/Antacid type D,Syrup,100mg,12 units,4,216.53,315.76,1,1
+139,Gastro/Antacid - Option E,Gastro/Antacid,,Tablet,250mg,100 units,3,101.37,143.43,1,1
+140,Gastro/Antacid - Option F,Gastro/Antacid,,Suspension,125mg,50 units,3,128.01,178.93,0,1
+141,Gastro/Antacid - Option G,Gastro/Antacid,Gastro/Antacid type G,Tablet,,30 units,4,187.7,251.72,1,1
+142,Vitamins & Supplements - Option A,Vitamins & Supplements,,Capsule,100mg,50 units,1,34.86,58.26,1,1
+143,Vitamins & Supplements - Option B,Vitamins & Supplements,Vitamins & Supplements type B,Capsule,125mg,10 units,4,237.32,323.71,1,1
+144,Vitamins & Supplements - Option C,Vitamins & Supplements,,Syrup,,50 units,3,137.82,219.65,0,1
+145,Vitamins & Supplements - Option D,Vitamins & Supplements,,Tablet,250mg,100 units,1,35.61,55.05,1,1
+146,Vitamins & Supplements - Option E,Vitamins & Supplements,,Capsule,40mg,50 units,3,78.58,111.1,1,1
+147,Vitamins & Supplements - Option F,Vitamins & Supplements,Vitamins & Supplements type F,Capsule,,10 units,2,144.95,242.25,0,1
+148,Vitamins & Supplements - Option G,Vitamins & Supplements,,Ointment,,24 units,4,42.84,69.95,1,1
+149,Vitamins & Supplements - Option H,Vitamins & Supplements,Vitamins & Supplements type H,Syrup,,50 units,1,208.97,288.99,1,1
+150,Vitamins & Supplements - Option I,Vitamins & Supplements,Vitamins & Supplements type I,Tablet,,10 units,4,249.3,410.26,1,1
+151,Dermatological - Option A,Dermatological,Dermatological type A,Cream,,50 units,4,36.25,59.95,1,1
+152,Dermatological - Option B,Dermatological,,Suspension,,100 units,1,169.22,214.28,1,1
+153,Dermatological - Option C,Dermatological,,Injection,,24 units,2,28.45,45.82,0,1
+154,Dermatological - Option D,Dermatological,,Tablet,250mg,50 units,1,44.36,65.52,0,1
+155,Dermatological - Option E,Dermatological,,Tablet,500mg,12 units,3,78.63,123.41,1,1
+156,Dermatological - Option F,Dermatological,,Capsule,,12 units,5,55.69,71.91,1,1
+157,Dermatological - Option G,Dermatological,,Cream,,24 units,4,49.11,82.29,1,1
+158,Antiseptic/First Aid - Option A,Antiseptic/First Aid,Antiseptic/First Aid type A,Tablet,20mg,20 units,5,134.46,192.52,1,1
+159,Antiseptic/First Aid - Option B,Antiseptic/First Aid,,Syrup,100mg,100 units,5,158.58,243.51,1,1
+160,Antiseptic/First Aid - Option C,Antiseptic/First Aid,,Tablet,,30 units,1,126.42,170.86,1,1
+161,Antiseptic/First Aid - Option D,Antiseptic/First Aid,Antiseptic/First Aid type D,Tablet,250mg,50 units,4,200.05,299.5,1,1
+162,Antiseptic/First Aid - Option E,Antiseptic/First Aid,,Suspension,125mg,10 units,4,231.45,341.77,0,1
+163,Antiseptic/First Aid - Option F,Antiseptic/First Aid,Antiseptic/First Aid type F,Tablet,20mg,50 units,1,212.87,271.41,1,1
+164,Family Planning - Option A,Family Planning,Family Planning type A,Tablet,100mg,24 units,3,209.39,342.45,1,1
+165,Family Planning - Option B,Family Planning,Family Planning type B,Ointment,,20 units,5,196.44,273.04,1,1
+166,Family Planning - Option C,Family Planning,,Tablet,40mg,50 units,1,138.4,183.2,1,1
+167,Family Planning - Option D,Family Planning,,Ointment,100mg,100 units,5,48.28,70.09,1,1
+168,Family Planning - Option E,Family Planning,,Tablet,250mg,24 units,1,228.17,289.8,1,1
+169,Family Planning - Option F,Family Planning,,Tablet,125mg,50 units,5,72.26,117.76,1,1
+170,Family Planning - Option G,Family Planning,,Syrup,100mg,100 units,2,94.54,154.1,1,1

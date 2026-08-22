@@ -1,0 +1,7 @@
+Supplier_ID,Supplier_Name,Supplier_Category,Typical_Lead_Time_Days,Active
+1,Central Wholesale Distributors Ltd,Wholesale Pharmaceutical,2,1
+2,Meridian Pharma Supplies,Wholesale Pharmaceutical,3,1
+3,Nairobi Regional Pharma Distributors,General Distributor,5,1
+4,Baraka Health Products Ltd,Wholesale Pharmaceutical,3,1
+5,Highland Medical Supplies,General Distributor,4,1
+6,Coastline Pharma Traders,Wholesale Pharmaceutical,6,0
